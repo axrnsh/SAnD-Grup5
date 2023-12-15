@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 //dikarenakan keterbatasan waktu, kode program tidak terlalu lengkap
+//hasil speedrun sehari, jadi jangan berharap banyak TT
 public class App {
     public static ArrayList<TaskRequest> arrayTaskRequest = new ArrayList<TaskRequest>();
     public static ArrayList<Tenant> arrayTenant = new ArrayList<Tenant>();
