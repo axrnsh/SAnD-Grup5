@@ -113,14 +113,14 @@ public class TaskRequest {
     @Override
     public String toString() {
         return 
-            "\nNomor Task Request: " + getNomorTaskRequest() + 
-            "\nTenant: " + getTenant() + 
-            "\nTanggal Permintaan: " + getTanggalPermintaan() + 
-            "\nWaktu Permintaan: " + getWaktuPermintaan() + 
-            "\nOperator" + getOperator() + 
-            "\nTask DiRequest Oleh: " + getTaskDiRequestOleh() + 
-            "\nTeknisi Yang Ditugaskan: " + getTeknisiYangDitugaskan() + 
-            "\nTanggal Permintaan Diselesaikan: " + getTanggalPermintaanDiselesaikan() +
-            "\nStatus: " + getStatus();
+            "Nomor Task Request\t\t: " + getNomorTaskRequest() + 
+            "\nTenant\t\t\t\t: " + getTenant() + 
+            "\nTanggal Permintaan\t\t: " + getTanggalPermintaan() + 
+            "\nWaktu Permintaan\t\t: " + getWaktuPermintaan() + 
+            "\nOperator\t\t\t: " + getOperator() + 
+            "\nTask DiRequest Oleh\t\t: " + getTaskDiRequestOleh() + 
+            "\nTeknisi Yang Ditugaskan\t\t: " + getTeknisiYangDitugaskan() + 
+            "\nTanggal Permintaan Diselesaikan : " + getTanggalPermintaanDiselesaikan() +
+            "\nStatus\t\t\t\t: " + getStatus();
     }    
 }

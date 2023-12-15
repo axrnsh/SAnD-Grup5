@@ -117,19 +117,19 @@ public class App {
         clearScreen();
         try {
             System.out.println("Input data berikut!");
-            System.out.print("Nomor Task Request: ");
+            System.out.print("Nomor Task Request\t: ");
             int nomorTaskRequest = Integer.parseInt(scanner.nextLine());
-            System.out.print("Nomor Tenant: ");
+            System.out.print("Nama Perusahaan Tenant\t: ");
             String nomorTenant = scanner.nextLine();
-            System.out.print("Tanggal Permintaan: ");
+            System.out.print("Tanggal Permintaan\t: ");
             String tanggalPermintaan = scanner.nextLine();
-            System.out.print("Waktu Permintaan: ");
+            System.out.print("Waktu Permintaan\t: ");
             String waktuPermintaan = scanner.nextLine();
-            System.out.print("Operator: ");
+            System.out.print("Operator\t\t: ");
             String operator = scanner.nextLine();
-            System.out.print("Task di Request oleh: ");
+            System.out.print("Task di Request oleh\t: ");
             String taskDiRequestOleh = scanner.nextLine();
-            System.out.print("Teknisi yang Ditugaskan: ");
+            System.out.print("Teknisi yang Ditugaskan\t: ");
             String teknisiYangDitugaskan = scanner.nextLine();
 
             TaskRequest taskRequest = new TaskRequest(nomorTaskRequest, nomorTenant, tanggalPermintaan,
@@ -148,13 +148,13 @@ public class App {
         clearScreen();
         try {
             System.out.println("Masukkan Nomor Task Request yang ingin ditampilkan:");
-            System.out.print("Nomor Task Request: ");
+            System.out.print("Nomor Task Request\t: ");
             int nomorTaskRequest = Integer.parseInt(scanner.nextLine());
 
             TaskRequest taskRequestToShow = findTaskRequestByNomor(nomorTaskRequest);
 
             if (taskRequestToShow != null) {
-                System.out.println("\nInformasi Task Request:");
+                System.out.println("\nInformasi Task Request\t:");
                 System.out.println(taskRequestToShow.toString());
             } else {
                 System.out
@@ -178,7 +178,7 @@ public class App {
         clearScreen();
         try {
             System.out.println("Masukkan Nomor Task Request yang ingin diupdate:");
-            System.out.print("Nomor Task Request: ");
+            System.out.print("Nomor Task Request\t: ");
             int nomorTaskRequest = Integer.parseInt(scanner.nextLine());
 
             TaskRequest taskRequestToUpdate = findTaskRequestByNomor(nomorTaskRequest);
@@ -186,9 +186,9 @@ public class App {
             if (taskRequestToUpdate != null) {
                 System.out.println("\nInformasi Task Request Sebelum Diupdate:");
                 System.out.println(taskRequestToUpdate.toString());
-                System.out.print("\nTanggal Permintaan Diselesaikan: ");
+                System.out.print("\nTanggal Permintaan Diselesaikan\t: ");
                 String tanggalPermintaanDiselesaikan = scanner.nextLine();
-                System.out.print("Status: ");
+                System.out.print("Status\t\t: ");
                 String status = scanner.nextLine();
 
                 taskRequestToUpdate.setTanggalPermintaanDiselesaikan(tanggalPermintaanDiselesaikan);
@@ -210,21 +210,21 @@ public class App {
         try {
             System.out.println("Input data Tenant berikut!");
 
-            System.out.print("Nomor Tenant: ");
+            System.out.print("Nomor Tenant\t: ");
             int nomorTenant = Integer.parseInt(scanner.nextLine());
-            System.out.print("Nama Perusahaan: ");
+            System.out.print("Nama Perusahaan\t: ");
             String namaPerusahaan = scanner.nextLine();
-            System.out.print("Nomor Unit: ");
+            System.out.print("Nomor Unit\t: ");
             String nomorUnit = scanner.nextLine();
-            System.out.print("Lantai: ");
+            System.out.print("Lantai\t\t: ");
             String lantai = scanner.nextLine();
-            System.out.print("Gedung: ");
+            System.out.print("Gedung\t\t: ");
             String gedung = scanner.nextLine();
-            System.out.print("Contact Person: ");
+            System.out.print("Contact Person\t: ");
             String contactPerson = scanner.nextLine();
-            System.out.print("Nomor Telepon: ");
+            System.out.print("Nomor Telepon\t: ");
             int nomorTelepon = Integer.parseInt(scanner.nextLine());
-            System.out.print("Email: ");
+            System.out.print("Email\t\t: ");
             String email = scanner.nextLine();
             System.out.print("Info Spesifikasi: ");
             String infoSpesifikasi = scanner.nextLine();
